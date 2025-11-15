@@ -5,12 +5,20 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    /* Background image for the whole page */
+    background-image: url('background.jpg');  /* Change to 'images/background.jpg' if in a subfolder */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* Fallback color if image doesn't load */
+    background-color: #a45252;
 }
 
 .container {
     text-align: center;
-    background-color: white;
+    /* Semi-transparent background so text is readable over the image */
+    background-color: rgba(22, 21, 21, 0.8);  /* Black with transparency */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
